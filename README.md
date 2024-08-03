@@ -3,13 +3,14 @@
 
 ## Table of Contents
 
-- [Description](#Project-Overview)
-  - [Data Set](#Dataset)
-  - [Features Description](#Features-Description)
+- [Project Overview](#project-overview)
+- [Data Set](#Dataset)
+- [Features Description](#Features-Description)
+- [Data Preprocessing](#data-preprocessing)
+- [Data Analysis](#data-analysis)
 - [Visualizations and Interpretations](#visualizations-and-interpretations)
-  - [Visualization 1: Correlation Heatmap](#visualization-1-correlation-heatmap)
-  - [Visualization 2: Age Distribution of Diabetic vs. Non-Diabetic Individuals](#visualization-2-age-distribution-of-diabetic-vs-non-diabetic-individuals)
-- [Results and Conclusion](#results-and-conclusion)
+- [Results](#results)
+- [Conclusion](#conclusion)
 - [Usage](#usage)
 - [Repository Structure](#repository-structure)
 - [References](#references)
@@ -51,7 +52,7 @@ For the analysis, we have used the Center for Disease Control and Prevention (CD
 ## Data Preprocessing
 Data preprocessing steps involved handling missing values, encoding categorical variables, and scaling features to ensure consistency and improve model performance.
 
-![Alt text](/Users/adhyakamat/Desktop/NEW Project/3.png)
+![Histogram of variables in the dataset](1.png)
 
 ## Data Analysis 
 
