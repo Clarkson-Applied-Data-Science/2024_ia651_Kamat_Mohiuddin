@@ -3,14 +3,12 @@
 
 ## Table of Contents
 
-- [Description](#description)
-  - [Key Aspects](#key-aspects)
-  - [Data Preprocessing](#data-preprocessing)
-  - [Features Description](#features-description)
+- [Description](#Project-Overview)
+  - [Data Set](#Dataset)
+  - [Features Description](#Features-Description)
 - [Visualizations and Interpretations](#visualizations-and-interpretations)
   - [Visualization 1: Correlation Heatmap](#visualization-1-correlation-heatmap)
   - [Visualization 2: Age Distribution of Diabetic vs. Non-Diabetic Individuals](#visualization-2-age-distribution-of-diabetic-vs-non-diabetic-individuals)
-  - *(Add more visualizations as needed)*
 - [Results and Conclusion](#results-and-conclusion)
 - [Usage](#usage)
 - [Repository Structure](#repository-structure)
