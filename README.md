@@ -28,28 +28,6 @@ In order to identify underlying patterns and correlations that contribute to the
 For the analysis, we have used the Center for Disease Control and Prevention (CDC) Behavioral Risk Factor Surveillance System (BRFSS) Diabetes dataset of the year 2015. The BRFSS is an extensive telephone survey on health-related topics that gathers information on a range of health issues and risky behaviors among Americans. One of the largest public health datasets currently accessible is the 2015 BRFSS dataset, which includes responses from more than 400,000 adults nationwide. This dataset contains a wide range of variables relevant to diabetes research, including lifestyle factors (physical activity, dietary habits, alcohol consumption), health-related variables (BMI, general health status, physical health status, and history of heart disease), and demographic data (age, gender, race, education level, and income).
 
 ## Features:
-- Diabetes_Binary: Whether an individual has diabetes (1) or not (0).
-- HighBP: High blood pressure indicator.
-- HighChol: High cholesterol indicator.
-- CholCheck: Whether cholesterol check was done in the past five years.
-- BMI: Body Mass Index.
-- Smoker: Smoking status.
-- Stroke: History of stroke.
-- HeartDiseaseorAttack: History of heart disease or attack.
-- PhysActivity: Physical activity status.
-- Fruits: Fruit consumption status.
-- Veggies: Vegetable consumption status.
-- HvyAlcoholConsump: Heavy alcohol consumption status.
-- AnyHealthcare: Access to any healthcare.
-- NoDocbcCost: Did not see a doctor due to cost.
-- GenHlth: General health status (1 = Excellent to 5 = Poor).
-- MentHlth: Number of days mental health was not good in the past 30 days.
-- PhysHlth: Number of days physical health was not good in the past 30 days.
-- DiffWalk: Difficulty walking.
-- Sex: Sex of the individual (0 = Female, 1 = Male).
-- Age: Age group (represented in decimal values, e.g., 2.5 for age group 18-24, 3.5 for 25-29, etc.).
-- Education: Education level (1 to 6).
-- Income: Income level (2 to 8).
 
 | Column              | Description                                                                         |
 |---------------------|-------------------------------------------------------------------------------------|
@@ -244,41 +222,34 @@ Interpretation:
 
 ### Model Performance Metrics
 
-- Logistic Regression:
+## Model Performance Metrics
 
-Accuracy: 0.73
-Precision: 0.73
-Recall: 0.75
-AUC: 0.80
-Cross-Validation AUC: 0.81 (average)
-- The performance of the Logistic Regression model is mediocre. It can differentiate between the classes to a moderate extent, as indicated by the AUC, and it strikes a reasonable balance between recall and precision.
+| Metric                      | Logistic Regression | Decision Tree | XGBoost | Random Forest |
+|-----------------------------|---------------------|---------------|---------|---------------|
+| Accuracy                    | 0.73                | 0.81          | 0.79    | 0.88          |
+| Precision                   | 0.73                | 0.80          | 0.76    | 0.85          |
+| Recall                      | 0.75                | 0.83          | 0.85    | 0.92          |
+| AUC                         | 0.80                | 0.81          | 0.86    | 0.95          |
+| Cross-Validation AUC (avg.) | 0.81                | 0.81          | 0.86    | 0.95          |
 
-- Decision Tree:
+### Model Summaries
 
-Accuracy: 0.81
-Precision: 0.80
-Recall: 0.83
-AUC: 0.81
-Cross-Validation AUC: 0.81 (average)
-- With more accuracy, precision, and recall than logistic regression, the decision tree model performs better. It appears to have superior class discrimination abilities based on the AUC.
+#### Logistic Regression
+- **Performance**: Mediocre
+- **Description**: The model can differentiate between the classes to a moderate extent, as indicated by the AUC, and it strikes a reasonable balance between recall and precision.
 
-- XGBoost:
+#### Decision Tree
+- **Performance**: Better than Logistic Regression
+- **Description**: With more accuracy, precision, and recall than logistic regression, the decision tree model performs better. It appears to have superior class discrimination abilities based on the AUC.
 
-Accuracy: 0.79
-Precision: 0.76
-Recall: 0.85
-AUC: 0.86
-Cross-Validation AUC: 0.86 (average)
-- XGBoost performs well, particularly when it comes to recall and AUC. It is little less precise than Decision Tree, but it still finds genuine positives quite well.
+#### XGBoost
+- **Performance**: Good
+- **Description**: XGBoost performs well, particularly when it comes to recall and AUC. It is a little less precise than the Decision Tree, but it still finds genuine positives quite well.
 
-- Random Forest:
+#### Random Forest
+- **Performance**: Exceptional
+- **Description**: All other models are outperformed by Random Forest. With the best accuracy, precision, recall, and AUC, it performs exceptionally well across the board in the classification domain.
 
-Accuracy: 0.88
-Precision: 0.85
-Recall: 0.92
-AUC: 0.95
-Cross-Validation AUC: 0.95 (average)
-- All other models are outperformed by Random Forest. With the best accuracy, precision, recall, and AUC, it performs exceptionally well across the board in the classification domain.
 
 ## Conclusion
 
