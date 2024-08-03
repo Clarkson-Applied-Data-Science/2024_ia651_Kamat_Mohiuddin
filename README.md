@@ -1,6 +1,21 @@
 # 2024_ia651_Kamat_Mohiuddin
 # Prediction of Diabetes
 
+## Table of Contents
+
+- [Description](#description)
+  - [Key Aspects](#key-aspects)
+  - [Data Preprocessing](#data-preprocessing)
+  - [Features Description](#features-description)
+- [Visualizations and Interpretations](#visualizations-and-interpretations)
+  - [Visualization 1: Correlation Heatmap](#visualization-1-correlation-heatmap)
+  - [Visualization 2: Age Distribution of Diabetic vs. Non-Diabetic Individuals](#visualization-2-age-distribution-of-diabetic-vs-non-diabetic-individuals)
+  - *(Add more visualizations as needed)*
+- [Results and Conclusion](#results-and-conclusion)
+- [Usage](#usage)
+- [Repository Structure](#repository-structure)
+- [References](#references)
+
 ## Project Overview
 An estimated 34.2 million Americans suffer from a group of diseases known as diabetes. Diabetes occurs when the body is unable to make or use insulin as it should. The pancreas secretes insulin, which controls blood glucose levels, also commonly referred to as blood sugar. Blood sugar levels must remain within a certain range for an individual; both high and low blood sugar levels can result in serious health issues, including organ damage.
 
