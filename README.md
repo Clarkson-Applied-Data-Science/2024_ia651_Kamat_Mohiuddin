@@ -26,36 +26,38 @@ In order to identify underlying patterns and correlations that contribute to the
 For the analysis, we have used the Center for Disease Control and Prevention (CDC) Behavioral Risk Factor Surveillance System (BRFSS) Diabetes dataset of the year 2015. The dataset includes 21 feature variables and the target variable ‘Diabetes_Binary’ indicates diabetes status (0: non-diabetic, 1: diabetic).
 
 ### Features:
-- `<span style="color:blue">Diabetes_binary</span>`: Diabetes status (1: diabetic, 0: non-diabetic)
-- `<span style="color:blue">HighBP</span>`: High blood pressure indicator
-- `<span style="color:blue">HighChol</span>`: High cholesterol indicator
-- `<span style="color:blue">CholCheck</span>`: Cholesterol check in the past five years
-- `<span style="color:blue">BMI</span>`: Body Mass Index
-- `<span style="color:blue">Smoker</span>`: Smoking status
-- `<span style="color:blue">Stroke</span>`: History of stroke
-- `<span style="color:blue">HeartDiseaseorAttack</span>`: History of heart disease or attack
-- `<span style="color:blue">PhysActivity</span>`: Physical activity status
-- `<span style="color:blue">Fruits</span>`: Fruit consumption status
-- `<span style="color:blue">Veggies</span>`: Vegetable consumption status
-- `<span style="color:blue">HvyAlcoholConsump</span>`: Heavy alcohol consumption status
-- `<span style="color:blue">AnyHealthcare</span>`: Access to any healthcare
-- `<span style="color:blue">NoDocbcCost</span>`: Did not see a doctor due to cost
-- `<span style="color:blue">GenHlth</span>`: General health status (1 = Excellent to 5 = Poor)
-- `<span style="color:blue">MentHlth</span>`: Days mental health was not good in the past 30 days
-- `<span style="color:blue">PhysHlth</span>`: Days physical health was not good in the past 30 days
-- `<span style="color:blue">DiffWalk</span>`: Difficulty walking
-- `<span style="color:blue">Sex</span>`: Sex of the individual (0 = Female, 1 = Male)
-- `<span style="color:blue">Age</span>`: Age group (represented in decimal values, e.g., 2.5 for age group 18-24, 3.5 for 25-29, etc.)
-- `<span style="color:blue">Education</span>`: Education level (1 to 6)
-- `<span style="color:blue">Income</span>`: Income level (2 to 8)
+- Diabetes_Binary: Whether an individual has diabetes (1) or not (0).
+- HighBP: High blood pressure indicator.
+- HighChol: High cholesterol indicator.
+- CholCheck: Whether cholesterol check was done in the past five years.
+- BMI: Body Mass Index.
+- Smoker: Smoking status.
+- Stroke: History of stroke.
+- HeartDiseaseorAttack: History of heart disease or attack.
+- PhysActivity: Physical activity status.
+- Fruits: Fruit consumption status.
+- Veggies: Vegetable consumption status.
+- HvyAlcoholConsump: Heavy alcohol consumption status.
+- AnyHealthcare: Access to any healthcare.
+- NoDocbcCost: Did not see a doctor due to cost.
+- GenHlth: General health status (1 = Excellent to 5 = Poor).
+- MentHlth: Number of days mental health was not good in the past 30 days.
+- PhysHlth: Number of days physical health was not good in the past 30 days.
+- DiffWalk: Difficulty walking.
+- Sex: Sex of the individual (0 = Female, 1 = Male).
+- Age: Age group (represented in decimal values, e.g., 2.5 for age group 18-24, 3.5 for 25-29, etc.).
+- Education: Education level (1 to 6).
+- Income: Income level (2 to 8).
 
 
 ## Data Preprocessing
 Data preprocessing steps involved handling missing values, encoding categorical variables, and scaling features to ensure consistency and improve model performance.
 
 ![Histogram of variables in the dataset](1.png)
+*Figure 1: Histogram of variables in the dataset*
 
 ## Data Analysis 
+
 
 
 
